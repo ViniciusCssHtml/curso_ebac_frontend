@@ -1,16 +1,19 @@
-const campoA = document.querySelector("#campo-a");
-console.log(typeof campoA);
-const campoB = document.querySelector("#campo-b");
-console.log(campoB);
-const btn = document.querySelector("#btn");
-console.log(btn);
+const form = document.getElementById("form");
 
-btn.addEventListener("click", function (campoA, campoB) {
-  if (campoA > campoB) {
-    return alert("é menor");
-  } else if (campoA === campoB) {
-    return alert("é igual");
+form.addEventListener("submit", function (event) {
+  let formEvalido = false;
+  event.preventDefault();
+
+  const numA = document.getElementById("campo-a").value;
+  const numB = document.getElementById("campo-b").value;
+  const validacao = numB > numA;
+
+  formEvalido = validacao;
+  if (formEvalido) {
+    return alert("Formulário Válido");
   } else {
-    return alert("é menor");
+    return alert("Formulário Inválido");
   }
 });
+
+console.log(form);
