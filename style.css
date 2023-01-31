@@ -8,12 +8,13 @@ body {
 form,
 label,
 input,
-h1 {
+h1,
+p {
   margin: 0px;
   padding: 0px;
 }
 form {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: #1b1b32;
   width: 300px;
   padding: 40px;
@@ -37,6 +38,7 @@ h1 {
   letter-spacing: 2px;
   cursor: pointer;
   display: block;
+  margin-bottom: 20px;
 }
 .botao:hover {
   background-color: #1313235b;
@@ -60,4 +62,21 @@ input {
   padding-bottom: 20px;
   border-bottom: 2px solid #0a0a23;
   text-align: center;
+}
+.mensagem-certa {
+  text-align: center;
+  background-color: green;
+  padding: 10px;
+  border-radius: 2px;
+  display: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mensagem-erro {
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+  border-radius: 2px;
+  display: none;
 }
