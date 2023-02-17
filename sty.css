@@ -1,0 +1,41 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins";
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  justify-content: center;
+  padding: 250px;
+  background-color: blueviolet;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+h1 {
+  padding: 0px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  background-color: blueviolet;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result {
+  padding: 8px;
+  cursor: pointer;
+}
+.resultclick {
+  text-decoration: line-through;
+}
