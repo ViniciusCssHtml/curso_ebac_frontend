@@ -1,0 +1,36 @@
+body {
+  font-family: "Poppins";
+  max-width: 1000px;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: crimson;
+}
+
+.container {
+  display: grid;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+.container button {
+  margin-top: 14px;
+  padding: 10px;
+  background-color: crimson;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.container label {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.container input {
+  padding: 8px;
+  border-radius: 2px;
+}

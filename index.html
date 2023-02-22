@@ -5,25 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo 3 exercício</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Exercício plugins Jquery</title>
 </head>
 
 <body>
-  <h1>Formulário de Cadastro</h1>
-  <br>
-  <label for="text">Nome</label>
-  <input type="text" placeholder="seu nome">
-  <br>
-  <label for="email">E-mail</label>
-  <input id="email" placeholder="emailde@exemplo.com">
-  <br>
-  <label for="text">Sua senha</label>
-  <input type="password" placeholder="Sua Senha">
-  <br>
-  <button type="submit">Cadastrar</button>
-
-
-
+  <section>
+    <form class="container">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" name='nome' id="nome">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone">
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf">
+      <label for="cep"> CEP:</label>
+      <input type="text" name="cep" id="cep">
+      <button type="submit">ENVIAR</button>
+    </form>
+  </section>
+  <!-- scripts java script -->
+  <script src="http://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/messages_pt_PT.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
