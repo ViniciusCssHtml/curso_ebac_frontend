@@ -1,0 +1,92 @@
+@use "config/variaveis";
+@use "sass:math";
+
+@function pixelParaEm($alvoPixel, $contextoPixel: 16px) {
+  @return math.div($alvoPixel, $contextoPixel) + em;
+}
+section {
+  padding: 56px 0;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+
+  h2 {
+    font-size: pixelParaEm(40px);
+  }
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+.product-item {
+  padding: 40px;
+  border: 1px solid variaveis.$corBorda;
+  display: grid;
+  gap: 10px;
+  justify-items: left;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 0px variaveis.$boxShadow;
+
+  img {
+    width: 200px;
+    border-radius: 16px;
+  }
+
+  h4 {
+    font-size: pixelParaEm(30px);
+    color: variaveis.$corSecundaria;
+  }
+
+  P {
+    color: variaveis.$corTexto;
+  }
+
+  a {
+    display: block;
+    background-color: variaveis.$corPrincipal;
+    color: #fff;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: variaveis.$corSecundaria;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    display: grid;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
