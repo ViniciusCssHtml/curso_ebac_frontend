@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("./maps.less");
+@breakpointmobile:~ "(max-width:767px)";
+@breakpointtablet:~ "(max-width:1023px)";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: #font[font-family];
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #colorBody[background-color];
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    background-color: #colorHeader[background-color];
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  .menu {
+    display: flex;
+
+    li {
+      font-weight: bold;
+      margin-left: 24px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  section {
+    padding: 56px 0;
+
+    h2 {
+      font-size: #colorBody[font-size];
+    }
+    .products {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+
+      img {
+        width: 300px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 30px;
+      }
+      .product-item {
+        display: grid;
+        gap: 5px;
+        justify-items: left;
+      }
+      .product-button {
+        display: block;
+        background-color: #Button[background-color];
+        color: #Button[color];
+        font-size: #Button[font-size];
+        text-align: center;
+        padding: 15px 25px;
+        border-radius: 4px;
+        border: 2px solid #Button[background-color];
+        margin-top: 8px;
+        font-weight: #Button[font-weight];
+
+        &:hover {
+          background-color: transparent;
+          color: #Button[background-color];
+          font-weight: #Button[font-weight];
+          transform: scale(1.07);
+          transition: all ease 1s;
+        }
+      }
+    }
+  }
+  @media @breakpointtablet {
+    section {
+      display: grid;
+      justify-content: center;
+    }
+    section .products {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media @breakpointmobile {
+    section .product-item img {
+      width: 180px;
+    }
+  }
+}
