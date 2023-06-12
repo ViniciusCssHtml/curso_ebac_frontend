@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
@@ -190,3 +191,7 @@ body section .products .product-button:hover {
     width: 180px;
   }
 }
+=======
+body{background-color:#d33d3d}
+/*# sourceMappingURL=maps/main.css.map */
+>>>>>>> 92ec4b64398b5510f2783f27ca9e5fad4a946299
