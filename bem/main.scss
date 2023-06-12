@@ -5,26 +5,34 @@
 }
 
 .produtos {
+  // Estilos para a lista de produtos
   max-width: 640px;
   width: 100%;
   margin: 56px auto;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-column-gap: 1%;
+}
 
-  .produto {
-    .produto-imagem {
-      width: 100%;
-    }
-    .produto-nome {
-      font-size: 1.2em;
-      margin: 8px 0;
-    }
-    .produto-descricao {
-      color: gray;
-    }
+.produto {
+  &__imagem {
+    // Estilos para a imagem do produto
+    width: 100%;
   }
-  .em-destaque {
+
+  &__nome {
+    // Estilos para o nome do produto
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+
+  &__descricao {
+    // Estilos para a descrição do produto
+    color: gray;
+  }
+
+  &--destaque {
+    // Estilos adicionais para um produto em destaque
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
